@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid minmax</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: minmax(20px, auto);
+      gap: 1em;
+    }
+
+    .grid > div {
+      background: #ecf0f1;
+      padding: 1em;
+      overflow: hidden;
+    }
+
+    .grid > div:hover {
+      border: 1px solid #f1c40f;
+    }
+
+    .nested-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 1rem;
+      /* grid-template-rows: 100px 100px; */
+    }
+
+    .nested-grid  div {
+      border: 1px solid black;
+      background: #f1c40f;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div>testing</div>
+    <div class="nested-grid">
+      <div>testing</div>
+      <div>testing</div>
+      <div>testing</div>
+      <div>testing</div>
+      <div>testing</div>
+      <div>testing</div>
+    </div>
+    <div>Consectetur nobis molestias dicta exercitationem delectus aperiam ducimus! oloremque nam maiores facere nesciunt tempora, adipisci natus id. Repudiandae, accusamus?</div>
+    <div>Provident, consectetur corporis facere, illum, perferendis molestias sint ducimus possimus nesciunt ut facilis quae quibusdam earum voluptatum temporibus magnam laborum ipsum corrupti! Molestiae, totam. Nesciunt ipsa repudiandae pariatur necessitatibus unde.</div>
+    <div>Inventore repellendus quos aperiam odit neque! Deleniti temporibus autem animi voluptatum sequi. Assumenda impedit optio officia enim error adipisci illum hic nostrum facere. Ad, voluptatem et quo at repudiandae sit!</div>
+    <div>Quidem similique eveniet soluta et quae tempore, hic architecto, ipsa doloremque optio totam officiis. Modi cumque obcaecati odit inventore nam assumenda dicta quaerat praesentium consequatur, nemo aut et ab? Odit?</div>
+    <div>Eligendi magni placeat minima porro magnam quibusdam, aut labore similique quos, beatae quod ipsum, explicabo expedita. Repellat quia omnis dolorem debitis est tempore eum optio perferendis, repudiandae harum possimus molestiae.</div>
+    <div>Eius rerum, in cum quas unde veniam voluptatum aut placeat earum voluptatem non velit. Enim iste tenetur accusantium voluptate facere culpa possimus, deserunt minus quisquam vero atque amet veritatis quidem.</div>
+  </div>
+</body>
+</html>

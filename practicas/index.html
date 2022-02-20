@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Grid</title>
+  <style>
+    .container {
+      /* height: 100vh; */
+      display: grid;
+      gap: 20px;
+      /*Con la función repeat estamos indicando que las columnas se van repetir según el primer argumento 
+      y el acho a ocupar se define en el segundo argumento*/
+      grid-template-columns: repeat(2,3fr);
+      /*Lo que estamos definiendo en la siguientes lineas es la altura que ocupara cada fila, pero si notamos, con grid-template-rows unicamente definimos la altura 
+      para las tres primeras filas mientras con la segunda linea, definimos la altura que tendrá por defecto los elementos restantes*/
+      grid-template-rows: 2fr 1fr 2fr;
+      grid-auto-rows: 3fr;
+      /* column-gap: 10px;
+      row-gap: 20px; */
+    }
+    .box {
+      background-color: slateblue;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">8</div>
+    <div class="box">8</div>
+    <div class="box">8</div>
+    <div class="box">8</div>
+  </div>
+</body>
+</html>
